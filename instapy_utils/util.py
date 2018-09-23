@@ -14,11 +14,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.common.by import By
 
-from time_util import sleep
-from time_util import sleep_actual
-from database_engine import get_database
-from quota_supervisor import quota_supervisor
-from settings import Settings
+from instapy_utils.time_util import sleep
+from instapy_utils.time_util import sleep_actual
+from instapy_utils.database_engine import get_database
+from instapy_utils.quota_supervisor import quota_supervisor
+from instapy_utils.settings import Settings
 
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import WebDriverException

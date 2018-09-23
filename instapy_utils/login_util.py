@@ -3,11 +3,11 @@ import time
 import pickle
 from selenium.webdriver.common.action_chains import ActionChains
 
-from .time_util import sleep
-from .util import update_activity
-from .util import web_address_navigator
-from .util import explicit_wait
-from .util import click_element
+from instapy_utils.time_util import sleep
+from instapy_utils.util import update_activity
+from instapy_utils.util import web_address_navigator
+from instapy_utils.util import explicit_wait
+from instapy_utils.util import click_element
 
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import WebDriverException
