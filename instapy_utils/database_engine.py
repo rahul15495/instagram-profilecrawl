@@ -2,7 +2,7 @@ import os
 import sqlite3
 
 from .settings import Settings
-
+from logger import logging as logger
 
 
 SELECT_FROM_PROFILE_WHERE_NAME = "SELECT * FROM profiles WHERE name = :name"
@@ -31,7 +31,7 @@ SQL_CREATE_FOLLOW_RESTRICTION_TABLE = """CREATE TABLE IF NOT EXISTS `followRestr
 
 def get_database(make=False):
     address = Settings.database_location
-    logger = Settings.logger
+    #logger = Settings.logger
     credentials = Settings.profile
 
     id, name = credentials["id"], credentials['name']

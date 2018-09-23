@@ -31,3 +31,9 @@ browser = webdriver.Chrome('./assets/chromedriver', chrome_options=chrome_option
 print ("Waiting 10 sec")
 browser.implicitly_wait(10)
 
+login_util.login_user(browser=browser,
+                        username="rahul.8d@gmail.com",
+                        password= "chaurasia15",
+                        logger= logging,
+                        logfolder=logfolder)
+
